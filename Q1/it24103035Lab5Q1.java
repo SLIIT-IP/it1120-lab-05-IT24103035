@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class it24103035Lab5Q1 { 
     public static void main(String[] args) {
@@ -13,12 +13,27 @@ public class it24103035Lab5Q1 {
         System.out.print("Enter the third integer: ");
         int num3 = scanner.nextInt();
         
-        int smallest = Math.min(num1, Math.min(num2, num3));
-        int largest = Math.max(num1, Math.max(num2, num3));
+        // Determine the smallest number
+        int smallest;
+        if (num1 <= num2 && num1 <= num3) {
+            smallest = num1;
+        } else if (num2 <= num1 && num2 <= num3) {
+            smallest = num2;
+        } else {
+            smallest = num3;
+        }
         
+        // Determine the largest number
+        int largest;
+        if (num1 >= num2 && num1 >= num3) {
+            largest = num1;
+        } else if (num2 >= num1 && num2 >= num3) {
+            largest = num2;
+        } else {
+            largest = num3;
+        }
         
         System.out.println("The smallest number is: " + smallest);
         System.out.println("The largest number is: " + largest);
-        
-       }
+    }
 }
