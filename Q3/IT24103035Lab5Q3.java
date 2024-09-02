@@ -4,11 +4,11 @@ public class IT24103035Lab5Q3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int roomChargePerDay = 48000;
-        int discount3To4Days = 10;
-        int discount5OrMoreDays = 20;
-        int minDate = 1;
-        int maxDate = 31;
+        final int roomChargePerDay = 48000;
+        final int discount3To4Days = 10;
+        final int discount5OrMoreDays = 20;
+        final int minDate = 1;
+        final int maxDate = 31;
 
         System.out.println("Room charge per day: Rs " + roomChargePerDay);
 
